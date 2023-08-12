@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Mulish:wght@400;600&family=Noto+Serif+JP:wght@500;600;700;900&family=Playfair+Display:wght@700&display=swap");
+
+@import url("sections/navbar.css");
+
+:root {
+  --black: #2c2a2b;
+  --gray: #3d3d3f;
+  --white: #ffffff;
+  --textWhite: #fafafa;
+  --lightGrayText: #8e8e8e;
+  --fontABZ: "ABeeZee", sans-serif;
+  --fontMulish: "Mulish", sans-serif;
+  --fontNSJP: "Noto Serif JP", serif;
+  --fontPlayfair: "Playfair Display", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
