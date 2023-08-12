@@ -1,0 +1,150 @@
+.hero {
+   display: flex;
+   align-items: center;
+   padding-top: 8px;
+}
+
+.hero--left img {
+   width: 734px;
+   height: 522px;
+}
+
+.hero--left__title {
+   color: var(--black);
+   font-family: var(--fontNSJP);
+   font-size: 90px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 130%;
+   padding-left: 135px;
+   margin-bottom: 82px;
+}
+
+.hero--left__color-options {
+   padding-left: 135px;
+   display: flex;
+   align-items: center;
+   gap: 60px;
+}
+
+.hero--left__color h4 {
+   color: var(--black);
+   font-family: var(--fontNSJP);
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+   margin-bottom: 10px;
+}
+
+.hero--left__color p {
+   color: var(--black);
+   font-family: var(--fontMulish);
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   max-width: 156px;
+}
+
+.hero--right {
+   padding: 105px 135px 0 0;
+}
+
+.hero--right__heading h3 {
+   color: var(--black);
+   font-family: var(--fontNSJP);
+   font-size: 34px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+   margin-bottom: 10px;
+}
+
+.hero--right__heading p {
+   color: var(--black);
+   font-family: var(--fontMulish);
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 150%;
+   max-width: 354px;
+}
+
+.hero--right img {
+   width: 664px;
+   height: 696px;
+}
+
+/* Media Query */
+
+/* large dekstop screen */
+@media (min-width: 1440px) {
+}
+
+/* Small dekstop device */
+@media (max-width: 1440px) {
+}
+
+/* Tablet Devices */
+@media (max-width: 1024px) {
+}
+
+/* Large Moblie Device */
+@media (max-width: 768px) {
+   .hero {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+   }
+
+   .hero--left {
+      text-align: center;
+      position: relative;
+   }
+
+   .hero--left img {
+      width: 430px;
+      height: 430px;
+   }
+
+   .hero--left__title {
+      margin: auto;
+      font-size: 65px;
+      max-width: 390px;
+      padding-left: 0;
+      margin-bottom: 45px;
+      margin-top: -45px;
+   }
+
+   .hero--left__color-options {
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+   }
+
+   .hero--right {
+      text-align: center;
+      padding-right: 0;
+      margin-bottom: -80px;
+   }
+
+   .hero--right__heading h3 {
+      font-size: 14px;
+   }
+
+   .hero--right__heading p {
+      font-size: 12px;
+      max-width: 400px;
+   }
+
+   .hero--right img {
+      display: none;
+   }
+}
+
+/* Small Mobile Device */
+@media (max-width: 480px) {
+}

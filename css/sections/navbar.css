@@ -1,48 +1,105 @@
 .navbar {
-  padding: 40px 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 9999;
+   padding: 40px 80px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .navbar__logo {
-  flex: 1;
+   flex: 1;
 }
 
 .navbar__logo p {
-  color: var(--black);
-  font-family: var(--fontPlayfair);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+   color: var(--black);
+   font-family: var(--fontPlayfair);
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
 }
 
 .navbar__links {
-  flex: 2;
-  display: flex;
-  justify-content: space-evenly;
+   flex: 2;
+   display: flex;
+   justify-content: space-evenly;
 }
 
 .navbar__links a {
-  color: var(--black);
-  font-family: var(--fontABZ);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: none;
+   color: var(--black);
+   font-family: var(--fontABZ);
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   text-decoration: none;
 }
 
 .navbar__extra {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  gap: 15px;
+   flex: 1;
+   display: flex;
+   justify-content: flex-end;
+   gap: 15px;
 }
 
-.navbar__extra {
-  width: 11.889px;
-  height: 12px;
-  color: var(--black);
+.navbar__extra a i {
+   width: 11.889px;
+   height: 12px;
+   color: var(--black);
+   text-decoration: none;
+}
+
+.navbar__extra__menu-icon {
+   display: none;
+}
+
+/* Media Query */
+
+/* large dekstop screen */
+@media (min-width: 1440px) {
+}
+
+/* Small dekstop device */
+@media (max-width: 1440px) {
+}
+
+/* Tablet Devices */
+@media (max-width: 1024px) {
+}
+
+/* Large Moblie Device */
+@media (max-width: 768px) {
+   .navbar__logo p {
+      font-size: 30px;
+   }
+
+   .navbar__links {
+      position: absolute;
+      right: -150%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding-top: 280px;
+      padding-right: 120px;
+   }
+
+   .navbar__links a {
+      font-size: 22px;
+   }
+
+   .navbar__extra__menu-icon {
+      display: block;
+   }
+
+   .active {
+      right: 0;
+   }
+}
+
+/* Small Mobile Device */
+@media (max-width: 480px) {
 }
