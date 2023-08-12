@@ -38,7 +38,7 @@
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  gap: 151px;
+  gap: 15px;
 }
 
 .navbar__extra {
