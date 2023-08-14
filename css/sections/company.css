@@ -1,0 +1,22 @@
+.company {
+   margin-top: 160px;
+   margin-bottom: 184px;
+   padding: 0 146px;
+}
+
+.company__title {
+   color: var(--gray);
+   text-align: center;
+   font-family: var(--fontMulish);
+   font-size: 44px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   margin-bottom: 50px;
+}
+
+.company__logo {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
